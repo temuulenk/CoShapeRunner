@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		009EF85020B770500090E304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009EF84F20B770500090E304 /* AppDelegate.swift */; };
+		009EF85220B770500090E304 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 009EF85120B770500090E304 /* GameScene.sks */; };
+		009EF85420B770500090E304 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 009EF85320B770500090E304 /* Actions.sks */; };
+		009EF85620B770500090E304 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009EF85520B770500090E304 /* GameScene.swift */; };
+		009EF85820B770500090E304 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009EF85720B770500090E304 /* GameViewController.swift */; };
+		009EF85B20B770500090E304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009EF85920B770500090E304 /* Main.storyboard */; };
+		009EF85D20B770520090E304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009EF85C20B770520090E304 /* Assets.xcassets */; };
+		009EF86020B770520090E304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009EF85E20B770520090E304 /* LaunchScreen.storyboard */; };
+		009EF86B20B770520090E304 /* CoShapeRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009EF86A20B770520090E304 /* CoShapeRunnerTests.swift */; };
+		009EF87620B770520090E304 /* CoShapeRunnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009EF87520B770520090E304 /* CoShapeRunnerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		009EF86720B770520090E304 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 009EF84420B770500090E304 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 009EF84B20B770500090E304;
+			remoteInfo = CoShapeRunner;
+		};
+		009EF87220B770520090E304 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 009EF84420B770500090E304 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 009EF84B20B770500090E304;
+			remoteInfo = CoShapeRunner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009EF84C20B770500090E304 /* CoShapeRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoShapeRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		009EF84F20B770500090E304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		009EF85120B770500090E304 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		009EF85320B770500090E304 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		009EF85520B770500090E304 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		009EF85720B770500090E304 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		009EF85A20B770500090E304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		009EF85C20B770520090E304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		009EF85F20B770520090E304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		009EF86120B770520090E304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009EF86620B770520090E304 /* CoShapeRunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoShapeRunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		009EF86A20B770520090E304 /* CoShapeRunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoShapeRunnerTests.swift; sourceTree = "<group>"; };
+		009EF86C20B770520090E304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009EF87120B770520090E304 /* CoShapeRunnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoShapeRunnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		009EF87520B770520090E304 /* CoShapeRunnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoShapeRunnerUITests.swift; sourceTree = "<group>"; };
+		009EF87720B770520090E304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		009EF84920B770500090E304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		009EF86320B770520090E304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		009EF86E20B770520090E304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		009EF84320B770500090E304 = {
+			isa = PBXGroup;
+			children = (
+				009EF84E20B770500090E304 /* CoShapeRunner */,
+				009EF86920B770520090E304 /* CoShapeRunnerTests */,
+				009EF87420B770520090E304 /* CoShapeRunnerUITests */,
+				009EF84D20B770500090E304 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		009EF84D20B770500090E304 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				009EF84C20B770500090E304 /* CoShapeRunner.app */,
+				009EF86620B770520090E304 /* CoShapeRunnerTests.xctest */,
+				009EF87120B770520090E304 /* CoShapeRunnerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		009EF84E20B770500090E304 /* CoShapeRunner */ = {
+			isa = PBXGroup;
+			children = (
+				009EF84F20B770500090E304 /* AppDelegate.swift */,
+				009EF85120B770500090E304 /* GameScene.sks */,
+				009EF85320B770500090E304 /* Actions.sks */,
+				009EF85520B770500090E304 /* GameScene.swift */,
+				009EF85720B770500090E304 /* GameViewController.swift */,
+				009EF85920B770500090E304 /* Main.storyboard */,
+				009EF85C20B770520090E304 /* Assets.xcassets */,
+				009EF85E20B770520090E304 /* LaunchScreen.storyboard */,
+				009EF86120B770520090E304 /* Info.plist */,
+			);
+			path = CoShapeRunner;
+			sourceTree = "<group>";
+		};
+		009EF86920B770520090E304 /* CoShapeRunnerTests */ = {
+			isa = PBXGroup;
+			children = (
+				009EF86A20B770520090E304 /* CoShapeRunnerTests.swift */,
+				009EF86C20B770520090E304 /* Info.plist */,
+			);
+			path = CoShapeRunnerTests;
+			sourceTree = "<group>";
+		};
+		009EF87420B770520090E304 /* CoShapeRunnerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				009EF87520B770520090E304 /* CoShapeRunnerUITests.swift */,
+				009EF87720B770520090E304 /* Info.plist */,
+			);
+			path = CoShapeRunnerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		009EF84B20B770500090E304 /* CoShapeRunner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 009EF87A20B770520090E304 /* Build configuration list for PBXNativeTarget "CoShapeRunner" */;
+			buildPhases = (
+				009EF84820B770500090E304 /* Sources */,
+				009EF84920B770500090E304 /* Frameworks */,
+				009EF84A20B770500090E304 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoShapeRunner;
+			productName = CoShapeRunner;
+			productReference = 009EF84C20B770500090E304 /* CoShapeRunner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		009EF86520B770520090E304 /* CoShapeRunnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 009EF87D20B770520090E304 /* Build configuration list for PBXNativeTarget "CoShapeRunnerTests" */;
+			buildPhases = (
+				009EF86220B770520090E304 /* Sources */,
+				009EF86320B770520090E304 /* Frameworks */,
+				009EF86420B770520090E304 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				009EF86820B770520090E304 /* PBXTargetDependency */,
+			);
+			name = CoShapeRunnerTests;
+			productName = CoShapeRunnerTests;
+			productReference = 009EF86620B770520090E304 /* CoShapeRunnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		009EF87020B770520090E304 /* CoShapeRunnerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 009EF88020B770520090E304 /* Build configuration list for PBXNativeTarget "CoShapeRunnerUITests" */;
+			buildPhases = (
+				009EF86D20B770520090E304 /* Sources */,
+				009EF86E20B770520090E304 /* Frameworks */,
+				009EF86F20B770520090E304 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				009EF87320B770520090E304 /* PBXTargetDependency */,
+			);
+			name = CoShapeRunnerUITests;
+			productName = CoShapeRunnerUITests;
+			productReference = 009EF87120B770520090E304 /* CoShapeRunnerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		009EF84420B770500090E304 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Tengis Gantulga";
+				TargetAttributes = {
+					009EF84B20B770500090E304 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					009EF86520B770520090E304 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 009EF84B20B770500090E304;
+					};
+					009EF87020B770520090E304 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 009EF84B20B770500090E304;
+					};
+				};
+			};
+			buildConfigurationList = 009EF84720B770500090E304 /* Build configuration list for PBXProject "CoShapeRunner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 009EF84320B770500090E304;
+			productRefGroup = 009EF84D20B770500090E304 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				009EF84B20B770500090E304 /* CoShapeRunner */,
+				009EF86520B770520090E304 /* CoShapeRunnerTests */,
+				009EF87020B770520090E304 /* CoShapeRunnerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		009EF84A20B770500090E304 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009EF85B20B770500090E304 /* Main.storyboard in Resources */,
+				009EF85220B770500090E304 /* GameScene.sks in Resources */,
+				009EF85D20B770520090E304 /* Assets.xcassets in Resources */,
+				009EF86020B770520090E304 /* LaunchScreen.storyboard in Resources */,
+				009EF85420B770500090E304 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		009EF86420B770520090E304 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		009EF86F20B770520090E304 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		009EF84820B770500090E304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009EF85620B770500090E304 /* GameScene.swift in Sources */,
+				009EF85820B770500090E304 /* GameViewController.swift in Sources */,
+				009EF85020B770500090E304 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		009EF86220B770520090E304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009EF86B20B770520090E304 /* CoShapeRunnerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		009EF86D20B770520090E304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009EF87620B770520090E304 /* CoShapeRunnerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		009EF86820B770520090E304 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 009EF84B20B770500090E304 /* CoShapeRunner */;
+			targetProxy = 009EF86720B770520090E304 /* PBXContainerItemProxy */;
+		};
+		009EF87320B770520090E304 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 009EF84B20B770500090E304 /* CoShapeRunner */;
+			targetProxy = 009EF87220B770520090E304 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		009EF85920B770500090E304 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				009EF85A20B770500090E304 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		009EF85E20B770520090E304 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				009EF85F20B770520090E304 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		009EF87820B770520090E304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		009EF87920B770520090E304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		009EF87B20B770520090E304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoShapeRunner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TG.CoShapeRunner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		009EF87C20B770520090E304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoShapeRunner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TG.CoShapeRunner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		009EF87E20B770520090E304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoShapeRunnerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TG.CoShapeRunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoShapeRunner.app/CoShapeRunner";
+			};
+			name = Debug;
+		};
+		009EF87F20B770520090E304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoShapeRunnerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TG.CoShapeRunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoShapeRunner.app/CoShapeRunner";
+			};
+			name = Release;
+		};
+		009EF88120B770520090E304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoShapeRunnerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TG.CoShapeRunnerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoShapeRunner;
+			};
+			name = Debug;
+		};
+		009EF88220B770520090E304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoShapeRunnerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TG.CoShapeRunnerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoShapeRunner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		009EF84720B770500090E304 /* Build configuration list for PBXProject "CoShapeRunner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				009EF87820B770520090E304 /* Debug */,
+				009EF87920B770520090E304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		009EF87A20B770520090E304 /* Build configuration list for PBXNativeTarget "CoShapeRunner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				009EF87B20B770520090E304 /* Debug */,
+				009EF87C20B770520090E304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		009EF87D20B770520090E304 /* Build configuration list for PBXNativeTarget "CoShapeRunnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				009EF87E20B770520090E304 /* Debug */,
+				009EF87F20B770520090E304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		009EF88020B770520090E304 /* Build configuration list for PBXNativeTarget "CoShapeRunnerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				009EF88120B770520090E304 /* Debug */,
+				009EF88220B770520090E304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 009EF84420B770500090E304 /* Project object */;
+}
