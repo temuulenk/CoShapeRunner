@@ -16,8 +16,16 @@ class Obstacle {
     let size = 30
     
     var randomColor: Int = 0
+
+    var player: Player = Player()
     
-    init() {
+    var lane: UInt32 = 0
+    
+    var toRemove: Bool = false
+    
+    init(player: Player) {
+        self.player = player
+        
         node = SKShapeNode(rectOf: CGSize(width: size, height: size))
         
         randomColor = Int(arc4random_uniform(3))
@@ -35,16 +43,28 @@ class Obstacle {
         node.alpha = 1
         node.name = "node"
         
-        let random = arc4random_uniform(3);
-        print(random)
+        lane = arc4random_uniform(3);
         
-        node.position.x = CGFloat(250 * Float(random) - 250)
+        node.position.x = CGFloat(250 * Float(lane) - 250)
         node.position.y = 700
         node.zPosition = 10
     }
     
     func update() {
         node.position.y -= 15
+        if(node.position.y <= CGFloat(-500 - size)) {
+            if(player.lane == self.lane && Int(player.randomColor) == self.randomColor) {
+                print("MATCHES")
+        		player.changeColor()
+                toRemove = true
+            }else if(player.lane == self.lane && Int(player.randomColor) != self.randomColor) {
+                print("LOST")
+                GameScene.onLost()
+             	toRemove = true
+            }else {
+                toRemove = true
+            }
+        }
     }
     
     func getNode() -> SKShapeNode {

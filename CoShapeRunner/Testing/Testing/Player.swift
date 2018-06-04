@@ -11,80 +11,70 @@ import SpriteKit
 
 class Player {
     
-    var x: Double = 0
-    var y: Double = 0
-    var radius: Double = 32
-    var color: SKColor = SKColor.orange
-    var circle: SKShapeNode = SKShapeNode()
-    var index: Int = -1
-    var name: String = ""
+    var user = SKSpriteNode()
     
-    var shouldMove: Bool = false
-    var target: CGPoint = CGPoint()
+    var lane: Int = 1
     
-    var speed: Double = 3.0
+    let duration = 0.25
     
-    init(x: Double, y: Double, index: Int) {
-        self.x = x
-        self.y = y
-        self.index = index
-        initializeCircle()
+    var randomColor: UInt32 = 0
+    
+    var lost: Bool = false
+    
+    init() {
+        
+    }
+    
+    init(user: SKSpriteNode) {
+		self.user = user
+        
+        self.user.position.x = CGFloat(lane * 250 - 250)
+        
+        // 0 = YELLOW
+        // 1 = RED
+        // 2 = BLUE
+        changeColor()
+        
+        
     }
     
     func update() {
-        
-        if(shouldMove == true) {
-            let dx = Double(target.x) - self.x
-            let dy = Double(target.y) - self.y
-            let angle = atan2(dy, dx)
-            
-            let vx = cos(angle) * speed
-            let vy = sin(angle) * speed
-            
-            self.x += vx
-            self.y += vy
-            
-            self.circle.position = CGPoint(x: self.x, y: self.y)
-            
-            let distance = ((Double(target.x) - self.x) * (Double(target.x) - self.x) + (Double(target.y) - self.y) * (Double(target.y) - self.y)).squareRoot()
-            
-            if(distance <= 2) {
-                shouldMove = false
-            }
-            
-            
+
+    }
+
+    func moveLeft() {
+        if(lane > 0) {
+            lane -= 1
+            let moveLeft = SKAction.move(to: CGPoint(x: 250 * lane - 250, y: -500), duration: duration)
+            user.run(moveLeft)
         }
-        
-//        self.x += 1
-//        self.y += 1
-//        self.circle.position = CGPoint(x: self.x, y: self.y)
     }
     
-    func onTouch() {
-        self.circle.fillColor = SKColor.red
+    func moveRight() {
+        if(lane < 2) {
+            lane += 1
+            let moveRight = SKAction.move(to: CGPoint(x: 250 * lane - 250, y: -500), duration: duration)
+            user.run(moveRight)
+        }
     }
     
-    func unselect() {
-        self.circle.fillColor = SKColor.orange
+    func changeColor() {
+        randomColor = arc4random_uniform(3)
+        switch randomColor {
+        	case 0:
+                user.color = UIColor.yellow
+            	break
+        	case 1:
+                user.color = UIColor.red
+        		break
+        	case 2:
+                user.color = UIColor.blue
+            	break
+        	default:
+            	user.color = UIColor.white
+            	break
+        }
     }
-    
-    func setTarget(target: CGPoint) {
-    	self.target = target
-        self.shouldMove = true
-        print("SET TARGET")
-    }
-    
-    
-    func initializeCircle() {
-        self.circle = SKShapeNode(circleOfRadius: CGFloat(radius))
-        self.circle.position = CGPoint(x: self.x, y: self.y)
-        self.circle.strokeColor = SKColor.black
-        self.circle.glowWidth = 1.0
-        self.circle.fillColor = self.color
-        self.circle.name = String(index)
-        self.name = self.circle.name!
-    }
-    
     
     
     

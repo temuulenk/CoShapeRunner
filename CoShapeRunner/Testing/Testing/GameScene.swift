@@ -20,7 +20,7 @@ class GameScene: SKScene {
     private var resettingSlider = false
     
     
-    var user = SKSpriteNode()
+//    var user = SKSpriteNode()
     
     var nodes: [Obstacle] = []
     
@@ -28,17 +28,25 @@ class GameScene: SKScene {
     
     let duration = 0.25
     
+    var player: Player = Player()
+    
+    static var timer : Timer?
     
     override func didMove(to view: SKView) {
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         
-        user = self.childNode(withName: "user") as! SKSpriteNode
+        player = Player(user: self.childNode(withName: "user") as! SKSpriteNode)
+		
         
-		user.position.x = CGFloat(lane * 250 - 250)
+        GameScene.timer = Timer.scheduledTimer(timeInterval: TimeInterval(3), target:self, selector:#selector(GameScene.createNodes), userInfo:nil, repeats: true)
         
-        Timer.scheduledTimer(timeInterval: TimeInterval(3), target:self, selector:#selector(GameScene.createNodes), userInfo:nil, repeats: true)
+//        user.color = UIColor.brown
+//
+//        user.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 100, height:100))
+//        user.physicsBody?.isDynamic = true
+//        user.physicsBody?.affectedByGravity = false
         
-		user.color = UIColor.brown
+        
         
 
     }
@@ -69,10 +77,12 @@ class GameScene: SKScene {
             
             //must be moving side to side
             if moveAmtX < 0 {
-                moveLanes(direction: 0)
+//                moveLanes(direction: 0)
+                player.moveLeft()
             }
             else {
-                moveLanes(direction: 1)
+//                moveLanes(direction: 1)
+                player.moveRight()
             }
         }
 //        else if fabs(moveAmtY) > minimum_detect_distance {
@@ -92,7 +102,11 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         
         for n in nodes {
-            n.update()
+            if(n.toRemove) {
+                n.getNode().removeFromParent()
+            }else {
+             	n.update()
+            }
         }
         
     }
@@ -112,7 +126,7 @@ class GameScene: SKScene {
 //        node.zPosition = 10
 //        addChild(node)
         
-        let obstacle = Obstacle()
+        let obstacle = Obstacle(player: player)
         nodes.append(obstacle)
         addChild(obstacle.getNode())
         
@@ -131,16 +145,24 @@ class GameScene: SKScene {
         if(direction == 0) {
             self.lane -= 1
             let moveLeft = SKAction.move(to: CGPoint(x: 250 * lane - 250, y: -500), duration: duration)
-            user.run(moveLeft)
+//            user.run(moveLeft)
         }else if(direction == 1) {
             self.lane += 1
             let moveRight = SKAction.move(to: CGPoint(x: 250 * lane - 250, y: -500), duration: duration)
-            user.run(moveRight)
+//            user.run(moveRight)
         }
     }
     
+    func didBegin(_ contact: SKPhysicsContact) {
+        print("HELLO")
+    }
     
     
+    static func onLost() {
+        if(timer != nil) {
+            timer?.invalidate()
+        }
+    }
     
     
     
